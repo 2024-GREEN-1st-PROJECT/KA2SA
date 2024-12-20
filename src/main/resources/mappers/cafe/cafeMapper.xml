@@ -71,7 +71,7 @@
         ON c.menuOptionId = d.menuOptionId
         LEFT JOIN `order` e
         ON e.orderId = a.orderId
-        WHERE e.createdAt BETWEEN #{daysAgo} AND '${toDay} 23:59:59'
+        WHERE e.createdAt BETWEEN #{daysAgo} AND '${today} 23:59:59'
         AND e.cafeId = #{cafeId}
         AND e.orderProgress = #{orderProgress}
         GROUP BY DATE(e.createdAt)
