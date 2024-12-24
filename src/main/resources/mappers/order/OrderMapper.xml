@@ -15,6 +15,7 @@
             <id property="orderMenuId" column="orderMenuId"/>
             <result property="menuName" column="menuName"/>
             <result property="price" column="price"/>
+            <result property="count" column="count"/>
             <collection property="orderMenuOptions" ofType="com.green.ca2sa.order.orderMenu.model.OrderMenuOptionDto">
                 <id property="menuOptionId" column="menuOptionId"/>
                 <result property="optionName" column="optionName" />
